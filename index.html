@@ -4,25 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GEN Friction Finder</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
   <main class="app">
-    <header>
-      <h1>GEN Friction Finder</h1>
-      <p>Поиск фрикционов АКПП по наружному диаметру, зубьям и модели</p>
+    <header class="header">
+      <div>
+        <h1>GEN Friction Finder</h1>
+        <p>Поиск фрикционов АКПП по наружному диаметру, зубьям, модели и пакету</p>
+      </div>
+      <span class="badge">v0.2</span>
     </header>
 
-    <section class="search-box">
-      <input id="od" type="number" step="0.1" placeholder="Наружный Ø, мм">
-      <input id="teeth" type="number" placeholder="Зубья">
-      <input id="model" type="text" placeholder="Модель АКПП">
-      <button id="reset">Сброс</button>
+    <section class="panel">
+      <div class="grid">
+        <label>
+          Наружный Ø, мм
+          <input id="od" type="number" step="0.1" placeholder="например 143" />
+        </label>
+
+        <label>
+          Допуск
+          <select id="tol">
+            <option value="0">точно</option>
+            <option value="0.5">±0.5 мм</option>
+            <option value="1" selected>±1 мм</option>
+            <option value="2">±2 мм</option>
+            <option value="3">±3 мм</option>
+          </select>
+        </label>
+
+        <label>
+          Зубья
+          <input id="teeth" type="number" placeholder="например 36" />
+        </label>
+
+        <label>
+          АКПП / модель
+          <input id="model" type="text" placeholder="например JF011E" />
+        </label>
+
+        <label>
+          Пакет
+          <input id="pack" type="text" placeholder="например Forward" />
+        </label>
+
+        <button id="reset" type="button">Сбросить</button>
+      </div>
     </section>
 
+    <section class="summary" id="summary"></section>
     <section id="results" class="results"></section>
   </main>
 
-  <script src="js/app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
