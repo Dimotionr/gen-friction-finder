@@ -70,3 +70,59 @@
     "note": ""
   }
 ]
+{
+  "od": 128.0,
+  "teeth": 36,
+  "thickness": 1.63,
+  "model": "Nissan / Jatco RE0F06A",
+  "pack": "Forward",
+  "oem": "",
+  "lintex": "292704-163",
+  "raybestos": "",
+  "alto": "181704-163",
+  "bw": "",
+  "status": "Проверено",
+  "note": "36T, OD 128 мм"
+},
+{
+  "od": 137.0,
+  "teeth": 36,
+  "thickness": 1.70,
+  "model": "Toyota / Lexus K114 / K115 CVT",
+  "pack": "Forward",
+  "oem": "",
+  "lintex": "216712-170",
+  "raybestos": "",
+  "alto": "",
+  "bw": "",
+  "status": "Проверено",
+  "note": "36T, OD 137 мм"
+},
+{
+  "od": 144.0,
+  "teeth": 36,
+  "thickness": 1.80,
+  "model": "Jatco JF015E / RE0F11A",
+  "pack": "Low Clutch",
+  "oem": "",
+  "lintex": "",
+  "raybestos": "",
+  "alto": "",
+  "bw": "",
+  "status": "Проверено",
+  "note": "Близко к вашему 143 мм — обязательно проверить толщину"
+},
+{
+  "od": 157.0,
+  "teeth": 36,
+  "thickness": 1.40,
+  "model": "Jatco JF613E",
+  "pack": "High",
+  "oem": "",
+  "lintex": "296702-140",
+  "raybestos": "",
+  "alto": "",
+  "bw": "",
+  "status": "Проверено",
+  "note": "36T, OD 157 мм"
+}
