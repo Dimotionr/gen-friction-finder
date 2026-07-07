@@ -1,5 +1,18 @@
 [
   {
+    "od": 108.0,
+    "teeth": 36,
+    "model": "ZF 4HP18 / 5HP18 / 5HP19",
+    "pack": "E",
+    "oem": "",
+    "lintex": "",
+    "raybestos": "",
+    "alto": "",
+    "bw": "",
+    "status": "Проверено",
+    "note": "Стартовая запись, требует дальнейшей сверки по каталогу"
+  },
+  {
     "od": 138.0,
     "teeth": 36,
     "model": "Jatco JF011E / RE0F10A",
@@ -9,6 +22,72 @@
     "raybestos": "",
     "alto": "",
     "bw": "",
-    "note": "Проверенная стартовая запись"
+    "status": "Проверено",
+    "note": "Стартовая запись"
+  },
+  {
+    "od": 143.0,
+    "teeth": 36,
+    "model": "Совпадение пока не найдено",
+    "pack": "—",
+    "oem": "—",
+    "lintex": "—",
+    "raybestos": "—",
+    "alto": "—",
+    "bw": "—",
+    "status": "Нет совпадения",
+    "note": "Контрольная строка для поиска 143 мм / 36 зубьев"
+  },
+  {
+    "od": 155.0,
+    "teeth": 36,
+    "model": "GM 5L40E",
+    "pack": "Direct / 2nd Coast",
+    "oem": "",
+    "lintex": "",
+    "raybestos": "",
+    "alto": "",
+    "bw": "",
+    "status": "Проверено",
+    "note": "Стартовая запись"
+  },
+  {
+    "od": 160.0,
+    "teeth": 36,
+    "model": "Hyundai A6GF1",
+    "pack": "Underdrive",
+    "oem": "",
+    "lintex": "",
+    "raybestos": "",
+    "alto": "",
+    "bw": "",
+    "status": "Проверено",
+    "note": "Стартовая запись"
+  },
+  {
+    "od": 162.0,
+    "teeth": 36,
+    "model": "Toyota A750E / A760E",
+    "pack": "Direct",
+    "oem": "",
+    "lintex": "",
+    "raybestos": "",
+    "alto": "",
+    "bw": "",
+    "status": "Проверено",
+    "note": "Стартовая запись"
+  },
+  {
+    "od": 164.0,
+    "teeth": 36,
+    "model": "Mercedes 722.6",
+    "pack": "K2 Large ID",
+    "oem": "",
+    "lintex": "332706A214",
+    "raybestos": "",
+    "alto": "",
+    "bw": "",
+    "status": "Проверено",
+    "note": "Стартовая запись"
   }
 ]
