@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GEN Friction Finder</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>GEN Friction Finder</h1>
-  <p>Каталог фрикционов АКПП</p>
+  <main class="app">
+    <header>
+      <h1>GEN Friction Finder</h1>
+      <p>Поиск фрикционов АКПП по наружному диаметру, зубьям и модели</p>
+    </header>
 
-  <input id="diameter" placeholder="Наружный диаметр, мм">
-  <input id="teeth" placeholder="Количество зубьев">
+    <section class="search-box">
+      <input id="od" type="number" step="0.1" placeholder="Наружный Ø, мм">
+      <input id="teeth" type="number" placeholder="Зубья">
+      <input id="model" type="text" placeholder="Модель АКПП">
+      <button id="reset">Сброс</button>
+    </section>
 
-  <button onclick="search()">Найти</button>
+    <section id="results" class="results"></section>
+  </main>
 
-  <div id="result"></div>
-
-  <script>
-    const data = [
-      { od: 108, teeth: 36, model: "ZF 4HP18 / 5HP18 / 5HP19", pack: "E" },
-      { od: 138, teeth: 36, model: "Jatco JF011E / RE0F10A", pack: "Forward" },
-      { od: 155, teeth: 36, model: "GM 5L40E", pack: "Direct / 2nd Coast" },
-      { od: 160, teeth: 36, model: "Hyundai A6GF1", pack: "Underdrive" },
-      { od: 162, teeth: 36, model: "Toyota A750E / A760E", pack: "Direct" },
-      { od: 164, teeth: 36, model: "Mercedes 722.6", pack: "K2 Large ID" }
-    ];
-
-    function search() {
-      const diameter = Number(document.getElementById("diameter").value);
-      const teeth = Number(document.getElementById("teeth").value);
-
-      const result = data.filter(item =>
-        (!diameter || Math.abs(item.od - diameter) <= 2) &&
-        (!teeth || item.teeth === teeth)
-      );
-
-      document.getElementById("result").innerHTML = result.map(item =>
-        `<p><b>${item.od} мм</b> — ${item.teeth} зубьев — ${item.model} — ${item.pack}</p>`
-      ).join("") || "Ничего не найдено";
-    }
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
